@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>노래방18번</title>
+</head>
+<body>
+    <h1>Hello thymeleaf</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>아이디</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:object="${user}">
+                <td><span th:text="*{name}"></span></td>
+                <td><span th:text="*{id}"></span></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
